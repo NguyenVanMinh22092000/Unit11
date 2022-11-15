@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+</head>
+<body>
+<script>
+
+    let range = +prompt('Enter the range1');
+    let number = Math.trunc(Math.random()*range+1);
+    do {
+      let input = +prompt('Enter the number!');
+      var life = 3;
+      if ( input == number){
+          alert('You Win');
+          break;
+      } else {
+          input > number? alert('too bigger') : alert('too lower');
+          life--;
+      }
+    }while (life !== 0);
+
+
+    // let range = +prompt('Enter the range:');
+    // let number = Math.trunc(Math.random()*range+1);
+    //
+    // for (let i = 3;; i--){
+    //   let input = +prompt('Your Guess:');
+    //   if (input === number) {
+    //     alert('You win');
+    //     break;
+    //   } else input > number? alert('too bigger') : alert('too lower');
+    //   if (i == 0 )
+    //         {alert('You Lose');
+    //         break;}
+    // }
+
+
+
+
+</script>
+</body>
+</html>

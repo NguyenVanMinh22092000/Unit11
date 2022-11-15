@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+<p style="font-size: 30px; color: green; text-align: center">Multiplication Table</p>
+<script>
+  let result = '';
+  let i, j, sout;
+  sout = "<table border='1' width='300' cellspacing='9' cellpadding='15'>";
+  for (i = 1; i <=10; i++) {
+      sout = sout + "<tr>";
+    for (j = 1; j <= 10; j++) {
+      let outPut = i*j;
+      result = + i + ' x ' + j + ' = ' + outPut + '</br>';
+        sout = sout + "</tr>";
+        document.write(result);
+    }
+  }
+</script>
+</body>
+</html>
